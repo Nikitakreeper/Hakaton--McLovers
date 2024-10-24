@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="./styles/sign.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+    <H1>
+        JobFinder
+    </H1>
+    <iframe style="display: none;" name="iframe3"></iframe>
+    <form target="iframe3">
+        <h2>
+            Авторизация
+        </h2>
+        <div class="inputs">
+            <input class="Email" pattern=".+@example\.com" type="email" name="" id="email" placeholder="Email" required>
+            <input class="Password" type="password" name="password" id="password" placeholder="Password" required>
+            <button id="yan">Войти</button>
+        </div>
+        <div class="sign">
+            <p class="login_text">Ещё нет аккаунта?</p>
+            <div class="a">
+                <a href="./sign_up.html" id="ahka">Зарегестрироваться</a>
+                <div class="polosa"></div>
+            </div>
+        </div>
+    </form>
+    <script src="./js/check_sign.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style-type: none;
+  outline: none;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #DCDCDC;
+  gap: 1.563rem;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem;
+  background: #2C59DD;
+  border-radius: 10px;
+  color: #EEF0ED;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: -1.5%;
+  cursor: pointer;
+  max-width: 23.563rem;
+  transition: 0.07s ease-in-out;
+}
+button:hover {
+  opacity: 0.85;
+}
+button:active {
+  transform: scale(0.99);
+  opacity: 1;
+  background: #2446ad;
+}
+
+h1 {
+  color: rgb(44, 89, 221);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 55px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+form {
+  max-width: 31.938rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  padding: 2.375rem 2rem;
+  flex: none;
+  border-radius: 1.875rem;
+  background: #EEF0ED;
+}
+form h2 {
+  color: rgb(44, 44, 48);
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 3.063rem;
+  letter-spacing: -1.5%;
+  text-align: center;
+}
+form .inputs {
+  width: 100%;
+  max-width: 23.563rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.938rem;
+  padding: 0rem;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  align-self: center;
+}
+form .inputs input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  flex: none;
+  align-self: stretch;
+  border: none;
+  border-radius: 0.625rem;
+  background: rgb(222, 222, 222);
+  color: #2C2C30;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: -1.5%;
+  text-align: left;
+}
+form .pol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.313rem;
+  padding: 0px;
+  max-width: 23.563rem;
+}
+form .pol .checks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  gap: 1.25rem;
+}
+form .pol .checks .check {
+  display: flex;
+  gap: 6px;
+}
+form .pol .checks .check input {
+  accent-color: #2C59DD;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+form .sign {
+  display: flex;
+  gap: 0.125rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: -1.5%;
+  text-align: center;
+}
+form .sign p {
+  color: #2C2C30;
+}
+form .sign a {
+  color: #2C59DD;
+}
+form .sign a:hover {
+  opacity: 0.8;
+}
+form .sign .a:hover .polosa {
+  width: 100%;
+}
+form .sign .polosa {
+  width: 0%;
+  height: 1px;
+  background: #2C59DD;
+  left: 0;
+  transition: 0.1s ease-in-out;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 4vw;
+  }
+}/*# sourceMappingURL=sign.css.map */

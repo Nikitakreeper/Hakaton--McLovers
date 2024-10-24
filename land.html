@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFinder</title>
+    <link rel="stylesheet" href="./styles/land.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="./land.html">
+                <h1>JobFinder</h1>
+            </a>
+            <a class="vacancy" href="./land.html">вакансии</a>
+        </div>
+        <div class="right">
+            <div class="right_elem">
+                <img src="./img/location.png" alt="">
+                <p id="region">Тольятти</p>  
+            </div>
+            <div class="right_elem">
+                <a href="./profile.html">
+                    <img src="./img/user-avatar.svg" alt="">
+                    <p id="fio">Имя Фамилия</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="all">
+        <div class="poisk">
+            <input type="text" placeholder="Профессия, навык" name="search" id="search-input">
+            <button id="search-btn">Найти</button>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="all-directions" name="category" checked>
+            <label for="all-directions">Все направления</label>
+        
+            <input type="radio" id="programming" name="category">
+            <label for="programming">Программирование</label>
+        
+            <input type="radio" id="design" name="category">
+            <label for="design">Дизайн</label>
+        
+            <input type="radio" id="games" name="category">
+            <label for="games">Игры</label>
+        
+            <input type="radio" id="engineering" name="category">
+            <label for="engineering">Инженерия</label>
+        </div>
+
+        <h2>Вакансии для вас</h2>
+        <div class="cards">
+            <div class="card" data-category="programming">
+                <div class="top">
+                    <p class="profession">Python-разработчик</p>
+                    <div class="img">
+                        <img src="./img/py.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        50000-100000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+        
+            <div class="card" data-category="design">
+                <div class="top">
+                    <p class="profession">Веб-дизайнер</p>
+                    <div class="img">
+                        <img src="./img/webdesigner.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        25000-50000 Р.
+                    </p>
+                    <p>До вычета налога</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+        
+            <div class="card" data-category="programming,games">
+                <div class="top">
+                    <p class="profession">Java-разработчик</p>
+                    <div class="img">
+                        <img src="./img/java.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        70000-80000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+            <div class="card" data-category="programming,design,engineering">
+                <div class="top">
+                    <p class="profession">IT-специалист</p>
+                    <div class="img">
+                        <img src="./img/it.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        70000-80000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+            <div class="card" data-category="engineering">
+                <div class="top">
+                    <p class="profession">Тестировщик</p>
+                    <div class="img">
+                        <img src="./img/tester.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        От 50000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+            <div class="card" data-category="design">
+                <div class="top">
+                    <p class="profession">UX/UI дизайнер</p>
+                    <div class="img">
+                        <img src="./img/UX.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        60000-80000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+            <div class="card" data-category="programming">
+                <div class="top">
+                    <p class="profession">Python-разработчик</p>
+                    <div class="img">
+                        <img src="./img/py.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        50000-100000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+        
+            <div class="card" data-category="design">
+                <div class="top">
+                    <p class="profession">Веб-дизайнер</p>
+                    <div class="img">
+                        <img src="./img/webdesigner.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        25000-50000 Р.
+                    </p>
+                    <p>До вычета налога</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+        
+            <div class="card" data-category="programming,games">
+                <div class="top">
+                    <p class="profession">Java-разработчик</p>
+                    <div class="img">
+                        <img src="./img/java.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        70000-80000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+            <div class="card" data-category="programming,design,engineering">
+                <div class="top">
+                    <p class="profession">IT-специалист</p>
+                    <div class="img">
+                        <img src="./img/it.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        70000-80000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+            <div class="card" data-category="engineering">
+                <div class="top">
+                    <p class="profession">Тестировщик</p>
+                    <div class="img">
+                        <img src="./img/tester.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        От 50000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+            <div class="card" data-category="design">
+                <div class="top">
+                    <p class="profession">UX/UI дизайнер</p>
+                    <div class="img">
+                        <img src="./img/UX.png" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="p_price">
+                        60000-80000 Р.
+                    </p>
+                    <p>На руки</p>
+                </div>
+                <div class="buttons">
+                    <button>Подробнее</button>
+                    <button>Откликнуться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <h2>JobFinder</h2>
+            </div>
+            <div class="footer__links">
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="./land.html">Вакансии</a></li>
+                    <li><a href="./profile.html">Профиль</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <h3>Социальные сети</h3>
+                <div class="social">
+                    <img src="./img/VK.svg" alt="">
+                    <img src="./img/TG.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2023 JobFinder. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="./js/land.js"></script>
+</body>
+</html>

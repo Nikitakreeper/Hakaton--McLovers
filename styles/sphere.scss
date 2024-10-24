@@ -1,0 +1,111 @@
+$black:#2C2C30;
+$blue:#2C59DD;
+$white:#EEF0ED;
+$graybg:#DCDCDC;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+    outline: none;
+    font-family: sans-serif;
+    color: $black;
+  }
+
+button{
+    display: flex;
+    padding: .625rem .625rem;
+    background: $blue;
+    color:$white;
+    justify-content: center;
+    border-radius: .625rem;
+    max-width: 23.5625rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.07s ease-in-out;
+    &:hover{
+        opacity: 0.85;
+    }
+    &:active{
+        transform: scale(0.99);
+        opacity: 1;
+        background: #2446ad;
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5625rem;
+    background-color: $graybg;
+    min-height: 100vh;
+}
+
+h1 {
+    color:#2C59DD;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.sphere{
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2.375rem 2.5rem;
+    gap: 2rem;
+    border-radius: 1.875rem;
+    max-width: 28.0625rem;
+    width: 100%;
+    .title_sphere{
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        .title{
+            color: $black;
+            font-size: 1.875rem;
+            font-weight: 500;
+        }
+        .title_text{
+            font-size: .8125rem;
+        }
+    }   
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 1.1875rem;
+        width: 100%;
+        .checkbox_div{
+            width: 100%;
+            max-width: 20.0625rem;
+            padding: .625rem;
+            align-self: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: .875rem;
+            label{
+                font-size: 1rem;
+            }
+            .sphere_input{
+                display: flex;
+                accent-color: $blue;
+                flex-direction: row;
+                width: .6875rem;
+            }
+        }
+        
+    }
+
+}
+html {
+    @media (max-width: 450px) {
+        font-size: 4vw;
+    }
+}

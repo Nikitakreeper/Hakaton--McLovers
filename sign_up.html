@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="./styles/sign.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+    <h1>JobFinder</h1>
+    <iframe style = "display: none;" id="iframe2"></iframe>
+    <form target="iframe2">
+      <h2>Регистрация</h2>
+      <div class="inputs">
+          <input type="email" pattern=".+@example\.com" placeholder="Email" name="" id="email" required>
+          <input type="text" placeholder="Имя" name="" id="imya" required>
+          <input type="text" placeholder="Фамилия" name="" id="fam" required>
+          <input type="text" placeholder="Регион" name="" id="region" required>
+          <input type="tel" minlength="11" placeholder="Номер телефона" name="" id="tel" required>
+          <input type="password" placeholder="Пароль" name="" id="password" required>
+      </div>
+      <div class="pol">
+          <p>Укажите пол:</p>
+          <div class="checks">
+            <div class="check">
+                <input type="radio" id="male" name="sex" checked/>
+                <label for="male" id="male">Муж</label>
+            </div>
+            <div class="check">
+                <input type="radio" id="female"name="sex"/>
+                <label for="female" id="female">Жен</label>
+            </div>
+          </div>
+      </div>
+      <button id="yan">Зарегестрироваться</button>
+      <div class="sign">
+        <p>Уже есть аккаунт?</p>
+        <div class="a">
+            <a href="./sign.html" id="ahka">Войти</a>
+            <div class="polosa"></div>
+        </div>
+    </div>
+    </form>
+    <script src="./js/check_sign_up.js"></script>
+</body>
+</html>
